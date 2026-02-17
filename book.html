@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book a Project | Anintu Tech Solutions</title>
+  <meta name="description" content="Book a project with Anintu Tech Solutions." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Anintu Tech Solutions</span>
+      </a>
+      <button class="menu-btn" data-menu-btn aria-label="Open menu">Menu</button>
+      <nav class="nav-links" data-nav-links>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="book.html">Book</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card">
+        <div class="badge"><span class="dot"></span> Book a Project</div>
+        <h1>Tell me what you want to build.</h1>
+        <p class="lead">When you submit, it opens a ready message in your email + WhatsApp.</p>
+
+        <form class="form" data-lead-form>
+          <div class="row">
+            <input class="input" name="name" placeholder="Your name" required />
+            <input class="input" name="phone" placeholder="WhatsApp number (optional)" />
+          </div>
+
+          <div class="row">
+            <input class="input" type="email" name="email" placeholder="Your email (optional)" />
+            <select class="input" name="service" required>
+              <option value="">Select service</option>
+              <option>Website Design & Development</option>
+              <option>UI/UX Design</option>
+              <option>Graphics Design</option>
+              <option>Data Analytics</option>
+              <option>AI Automation</option>
+              <option>Support & Maintenance</option>
+            </select>
+          </div>
+
+          <div class="row">
+            <input class="input" name="budget" placeholder="Budget (e.g. ₦50k–₦150k)" />
+            <input class="input" name="timeline" placeholder="Timeline (e.g. 1–2 weeks)" />
+          </div>
+
+          <textarea name="message" placeholder="Project details (what you need, examples/links, any deadline)"></textarea>
+
+          <button class="btn primary" type="submit">Send Request</button>
+
+          <div class="notice">
+            If you prefer, you can also chat directly:
+            <a href="https://wa.me/2347032413214?text=Hi%20Anintu%20Tech%20Solutions%2C%20I%20want%20to%20book%20a%20project." target="_blank" rel="noopener">WhatsApp</a>
+            or
+            <a href="mailto:anintutechsolutions@gmail.com?subject=Project%20Request%20(Anintu%20Tech%20Solutions)">Email</a>.
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="grid2">
+        <div>
+          <strong>Anintu Tech Solutions</strong>
+          <div class="small muted">Web • UI/UX • Graphics • Data • AI Automation</div>
+        </div>
+        <div style="text-align:right">
+          <a href="mailto:anintutechsolutions@gmail.com">anintutechsolutions@gmail.com</a><br/>
+          <a href="https://wa.me/2347032413214" target="_blank" rel="noopener">WhatsApp: +2347032413214</a>
+        </div>
+      </div>
+      <div class="small muted" style="margin-top:12px">© <span id="y"></span> Anintu Tech Solutions</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
