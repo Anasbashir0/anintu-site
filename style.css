@@ -8,6 +8,29 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Inter', sans-serif; background-color: var(--dark); color: var(--light); line-height: 1.6; scroll-behavior: smooth; }
 
+/* Logo Styling */
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.brand-logo {
+    height: 50px; /* Adjust this height to fit your navbar perfectly */
+    width: auto;  /* Maintains aspect ratio */
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.brand-logo:hover {
+    transform: scale(1.05); /* Subtle pop when hovered */
+}
+
+/* Adjust header padding if your logo is tall */
+header {
+    padding: 1rem 10%; 
+}
+
 /* Navigation */
 header { padding: 1.5rem 10%; background: rgba(15, 23, 42, 0.95); position: fixed; width: 100%; top: 0; z-index: 1000; border-bottom: 1px solid #1e293b; }
 nav { display: flex; justify-content: space-between; align-items: center; }
